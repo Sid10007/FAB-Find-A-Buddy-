@@ -1,0 +1,32 @@
+{
+  "name": "dotslash",
+  "version": "1.0.0",
+  "description": "electricity_bill_prediction",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildbabel": "babel static/js -d static/dist/js",
+    "build": "npm run buildbabel; npx webpack;"
+  },
+  "author": "A_Team",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "webpack": "^4.29.0",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "webpack-command": "^0.4.2"
+  }
+}

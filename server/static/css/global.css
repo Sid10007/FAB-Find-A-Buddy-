@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+/*----------------Logobar-----------------*/
+.Logobar {
+  width: 100%;
+  height: 5.5rem;
+  background-color: black;
+}
+
+.Logobar img {
+  float: left;
+  height: 5.5rem;
+  width: 22rem;
+}
+
+
+/*--------------Footer----------------*/
+.Footer {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+  color: #F18805;
+  font-family: 'Comfortaa';
+  font-size: .8rem;
+}
+
+.Footer p {
+  text-align: center;
+  padding-top: .6rem;
+}
