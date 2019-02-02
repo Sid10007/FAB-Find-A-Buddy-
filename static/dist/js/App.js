@@ -49,7 +49,7 @@ function (_React$Component) {
     value: function render() {
       return React.createElement("div", {
         className: "custom-container"
-      }, React.createElement(_Logobar.default, null), React.createElement(_Entry.default, null));
+      }, React.createElement(_Logobar.default, null), React.createElement(_Entry.default, null), React.createElement(_Footer.default, null));
     }
   }]);
 
