@@ -10,7 +10,7 @@ export default class App extends React.Component {
       <div className="custom-container">
           <Logobar />
           <Entry />
-          
+          <Footer />
       </div>
     );
   }

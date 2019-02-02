@@ -1,9 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa');
-
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Pacifico');
 
 * {
   padding: 0;
   margin: 0;
+}
+
+
+.custom-container {
+  background-color: black;
+  height: 100vh;
 }
 
 
@@ -36,4 +41,70 @@
 .Footer p {
   text-align: center;
   padding-top: .6rem;
+  background: -webkit-linear-gradient(left, red, #E02500, #D95D39, #F5E219, #FFF44F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/*-----------------Entry-------------------*/
+.Entry {
+  margin: 5rem 38vw;
+}
+
+.Entry h2 {
+  text-align: center;
+  font-family: "Pacifico";
+  background: -webkit-linear-gradient(left, red, #E02500, #D95D39, #F5E219, #FFF44F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1rem;
+  margin: 0;
+}
+
+.Entry label {
+  font-family: "Comfortaa";
+  color: #E02500;
+}
+
+.Entry button {
+  font-family: "Comfortaa";
+  width: 100%;
+  background-color: #E02500;
+  border: .08rem solid #E02500;
+  color: white;
+  margin-top: 1.2rem;
+}
+
+.Entry button:hover {
+  background-color: #E02500;
+  border: .08rem solid #E02500;
+  color: white;
+  opacity: .9;
+}
+
+.Entry input {
+  font-family: "Comfortaa";
+}
+
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.Entry input:focus {
+  border: .08rem solid #E02500;
+}
+
+.highlight {
+  width: 100%;
+  background-color: black;
+  height: .1rem;
+  margin-bottom: 2rem;
+  background-image: linear-gradient(to right, red, #E02500, #D95D39, #F5E219, #FFF44F);
+}
+
+#inactive {
+  display: none;
 }
