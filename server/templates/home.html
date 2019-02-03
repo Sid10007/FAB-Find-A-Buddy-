@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link  rel="stylesheet" href="../static/css/global.css" type="text/css" />
+  </head>
+  <body>
+    <div class='custom-navbar'>
+      <img src='../static/images/logo.jpeg'/>
+      <ul class="tabs">
+        <li><a href="/entry-login">Login</a></li>
+        <li><a href="/entry-register">Register</a></li>
+      </ul>
+    </div>
+    <div id="matches">
+      {% for i in range(0, n) %}
+        <p>{{ users[i].name }} : {{ match_index[i] }}</p>
+      {% endfor %}
+    </div>
+    <div class='Footer'>
+      <p>The A Team <span class="copyright">&copy;</span> 2019</p>
+    </div>
+  </body>
+</html>

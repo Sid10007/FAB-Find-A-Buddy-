@@ -42,11 +42,13 @@ function (_React$Component) {
       return React.createElement("div", {
         className: "Entry"
       }, React.createElement("div", {
-        id: "active"
+        id: "login",
+        class: "active"
       }, React.createElement("h2", null, "Login"), React.createElement("div", {
         class: "highlight"
       }), React.createElement("form", {
-        action: ""
+        action: "/login",
+        method: "post"
       }, React.createElement("div", {
         class: "form-group"
       }, React.createElement("label", {
@@ -56,7 +58,8 @@ function (_React$Component) {
         class: "form-control",
         id: "login-username",
         placeholder: "Enter username",
-        name: "username"
+        name: "username",
+        required: "required"
       })), React.createElement("div", {
         class: "form-group"
       }, React.createElement("label", {
@@ -66,12 +69,14 @@ function (_React$Component) {
         class: "form-control",
         id: "login-pwd",
         placeholder: "Enter password",
-        name: "pswd"
+        name: "pswd",
+        required: "required"
       })), React.createElement("center", null, React.createElement("button", {
         type: "submit",
         class: "btn btn-primary"
       }, "Login")))), React.createElement("div", {
-        id: "inactive"
+        id: "register",
+        class: "inactive"
       }, React.createElement("h2", null, "Register"), React.createElement("div", {
         class: "highlight"
       }), React.createElement("form", {
@@ -86,7 +91,8 @@ function (_React$Component) {
         class: "form-control",
         id: "register-name",
         placeholder: "Enter name",
-        name: "name"
+        name: "name",
+        required: "required"
       })), React.createElement("div", {
         class: "form-group"
       }, React.createElement("label", {
@@ -96,7 +102,8 @@ function (_React$Component) {
         class: "form-control",
         id: "register-username",
         placeholder: "Enter username",
-        name: "username"
+        name: "username",
+        required: "required"
       })), React.createElement("div", {
         class: "form-group"
       }, React.createElement("label", {
@@ -106,7 +113,8 @@ function (_React$Component) {
         class: "form-control",
         id: "register-pwd",
         placeholder: "Enter password",
-        name: "pswd"
+        name: "pswd",
+        required: "required"
       })), React.createElement("div", {
         class: "form-group"
       }, React.createElement("label", {
@@ -116,7 +124,8 @@ function (_React$Component) {
         class: "form-control",
         id: "check-register-pwd",
         placeholder: "Re-Enter password",
-        name: "confirmpswd"
+        name: "confirmpswd",
+        required: "required"
       })), React.createElement("label", {
         for: "gender"
       }, "Gender:"), React.createElement("br", null), React.createElement("div", {
@@ -152,71 +161,10 @@ function (_React$Component) {
         id: "radio3",
         name: "gender",
         value: "Other"
-      }), "Other")), React.createElement("br", null), React.createElement("div", {
-        class: "form-group"
-      }, React.createElement("label", {
-        for: "gender"
-      }, "Phone:"), React.createElement("input", {
-        class: "form-control",
-        id: "inputPhone",
-        maxlength: "10",
-        name: "phone",
-        required: "required",
-        size: "10",
-        title: "",
-        type: "text"
-      })), React.createElement("div", {
-        class: "form-group"
-      }, React.createElement("label", {
-        for: "AE1"
-      }, "Area of Expertise 1:"), React.createElement("select", {
-        class: "form-control",
-        name: "AE1",
-        size: "1"
-      }, React.createElement("option", null, "Web Development"), React.createElement("option", null, "Machine Learning"), React.createElement("option", null, "Python"), React.createElement("option", null, "JavaScript"), React.createElement("option", null, "Game Development"), React.createElement("option", null, "Autocad"), React.createElement("option", null, "Photoshop"), React.createElement("option", null, "Photography"), React.createElement("option", null, "Dance"), React.createElement("option", null, "FL Studio"))), React.createElement("div", {
-        class: "form-group"
-      }, React.createElement("label", {
-        for: "AE2"
-      }, "Area of Expertise 1:"), React.createElement("select", {
-        class: "form-control",
-        name: "AE2",
-        size: "1"
-      }, React.createElement("option", null, "Web Development"), React.createElement("option", null, "Machine Learning"), React.createElement("option", null, "Python"), React.createElement("option", null, "JavaScript"), React.createElement("option", null, "Game Development"), React.createElement("option", null, "Autocad"), React.createElement("option", null, "Photoshop"), React.createElement("option", null, "Photography"), React.createElement("option", null, "Dance"), React.createElement("option", null, "FL Studio"))), React.createElement("div", {
-        class: "form-group"
-      }, React.createElement("label", {
-        for: "AE3"
-      }, "Area of Expertise 2:"), React.createElement("select", {
-        class: "form-control",
-        name: "AE3",
-        size: "1"
-      }, React.createElement("option", null, "Web Development"), React.createElement("option", null, "Machine Learning"), React.createElement("option", null, "Python"), React.createElement("option", null, "JavaScript"), React.createElement("option", null, "Game Development"), React.createElement("option", null, "Autocad"), React.createElement("option", null, "Photoshop"), React.createElement("option", null, "Photography"), React.createElement("option", null, "Dance"), React.createElement("option", null, "FL Studio"))), React.createElement("div", {
-        class: "form-group"
-      }, React.createElement("label", {
-        for: "Al1"
-      }, "Area to Explore 3:"), React.createElement("select", {
-        class: "form-control",
-        name: "Al1",
-        size: "1"
-      }, React.createElement("option", null, "Web Development"), React.createElement("option", null, "Machine Learning"), React.createElement("option", null, "Python"), React.createElement("option", null, "JavaScript"), React.createElement("option", null, "Game Development"), React.createElement("option", null, "Autocad"), React.createElement("option", null, "Photoshop"), React.createElement("option", null, "Photography"), React.createElement("option", null, "Dance"), React.createElement("option", null, "FL Studio"))), React.createElement("div", {
-        class: "form-group"
-      }, React.createElement("label", {
-        for: "Al2"
-      }, "Area to Explore 2:"), React.createElement("select", {
-        class: "form-control",
-        name: "Al2",
-        size: "1"
-      }, React.createElement("option", null, "Web Development"), React.createElement("option", null, "Machine Learning"), React.createElement("option", null, "Python"), React.createElement("option", null, "JavaScript"), React.createElement("option", null, "Game Development"), React.createElement("option", null, "Autocad"), React.createElement("option", null, "Photoshop"), React.createElement("option", null, "Photography"), React.createElement("option", null, "Dance"), React.createElement("option", null, "FL Studio"))), React.createElement("div", {
-        class: "form-group"
-      }, React.createElement("label", {
-        for: "Al3"
-      }, "Area to Explore 3:"), React.createElement("select", {
-        class: "form-control",
-        name: "Al3",
-        size: "1"
-      }, React.createElement("option", null, "Web Development"), React.createElement("option", null, "Machine Learning"), React.createElement("option", null, "Python"), React.createElement("option", null, "JavaScript"), React.createElement("option", null, "Game Development"), React.createElement("option", null, "Autocad"), React.createElement("option", null, "Photoshop"), React.createElement("option", null, "Photography"), React.createElement("option", null, "Dance"), React.createElement("option", null, "FL Studio"))), React.createElement("center", null, React.createElement("button", {
+      }), "Other")), React.createElement("br", null), React.createElement("button", {
         type: "submit",
         class: "btn btn-primary"
-      }, "Register")))));
+      }, "Register"))));
     }
   }]);
 
