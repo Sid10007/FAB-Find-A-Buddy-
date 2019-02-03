@@ -9,16 +9,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     <link  rel="stylesheet" href="../static/css/global.css" type="text/css" />
+    <style>
+      
+    </style>
   </head>
   <body>
     <div class='custom-navbar'>
       <img src='../static/images/logo.jpeg'/>
       <ul class="tabs">
-        <li><a href="/entry-login">Login</a></li>
-        <li><a href="/entry-register">Register</a></li>
+        <li></a></li>
+        <li></a></li>
       </ul>
     </div>
     <div id="matches">
+      <p>Matches Found!!!</p><br>
       {% for i in range(0, n) %}
         <p>{{ users[i].name }} : {{ match_index[i] }}</p>
       {% endfor %}
