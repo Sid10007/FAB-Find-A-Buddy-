@@ -33,18 +33,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 var React = require('react');
 
-var App =
+var Main =
 /*#__PURE__*/
 function (_React$Component) {
-  _inherits(App, _React$Component);
+  _inherits(Main, _React$Component);
 
-  function App() {
-    _classCallCheck(this, App);
+  function Main() {
+    _classCallCheck(this, Main);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(App).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Main).apply(this, arguments));
   }
 
-  _createClass(App, [{
+  _createClass(Main, [{
     key: "render",
     value: function render() {
       return React.createElement("div", {
@@ -53,7 +53,7 @@ function (_React$Component) {
     }
   }]);
 
-  return App;
+  return Main;
 }(React.Component);
 
-exports.default = App;
+exports.default = Main;

@@ -40,14 +40,18 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return React.createElement("div", {
-        class: "body"
-      }, React.createElement("section", {
-        class: "textanimation"
+        className: "body"
+      }, React.createElement("div", {
+        class: "insidebody"
       }, React.createElement("div", {
         id: "textanimation1"
-      }, React.createElement("p", null, "Find a New Buddy")), React.createElement("div", {
+      }, React.createElement("div", {
+        class: "textanimation1"
+      }, "SHARE AND LEARN")), React.createElement("div", {
         id: "textanimation2"
-      }, React.createElement("p", null, "Today!"))));
+      }, React.createElement("div", {
+        class: "textanimation2"
+      }, "Join Fab now and connect to people who can help you learn the skills you want to become an expert at. In return teach them the skills you know. A win win for both!"))));
     }
   }]);
 
